@@ -26,18 +26,17 @@ require 'includes/header.php';
         </div>
         <div class="about-text">
             <p class="about-lead">
-                I'm a a student who wants to be a full-stack developer, and I am both a "early bird"
-                and a "night owl" depending on what routine I have. 
+                I'm a a student with a mission to be a full-stack developer that sit at the intersection of precise coding and an identity.
+                and I am based in a timezone somewhere between "early bird" and "night owl" — really it depends on the deadline.
             </p>
             <p>
-                For the past two years, I am learning and progressing my coding skills
-                and I have a mission to make applications that reflect the Filipino
+                For the past two years, I've been building products across fintech, media, e-commerce, and SaaS. I care deeply about the craft of software: readable code, thoughtful architecture, and interfaces that feel inevitable.
+                and I have a mission to be a full-stack developer that sit at the intersection of precise coding and an
                 identity that complies with international standards. 
             </p>
             <p>
-                My work lives at learning different programming languages, a requirement
-                to be programmer-ready in the next few years so that I will have a startup
-                for the future application that I will publish. 
+                I am a student of the Technological University of the Philippines, where I am currently pursuing a degree in Computer Programming. I am expected
+                to graduate and enter the workforce with a strong foundation in both theoretical knowledge and practical skills. 
             </p>
             <div class="about-actions">
                 <a href="/contact" class="btn btn--primary">Work with me</a>

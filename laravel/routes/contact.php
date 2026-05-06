@@ -17,8 +17,8 @@ require 'includes/header.php';
     <div class="container contact-grid">
         <div class="contact-info">
             <p class="contact-intro">
-                I'm open to freelance projects, full-time opportunities, and interesting
-                conversations. Call or message me... and I respond within 24 hours.
+                I'm open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, 
+                or just want to say hi, feel free to reach out! I value meaningful conversations. Call or message me... and I respond within 24 hours.
             </p>
 
             <div class="contact-item">
@@ -38,7 +38,7 @@ require 'includes/header.php';
                 <span class="dot dot--green"></span>
                 <div>
                     <strong>Available for new projects</strong>
-                    <p>Estimated availability: Q3 2026</p>
+                    <p>Estimated availability: Q3 or Q4 2026</p>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ require 'includes/header.php';
             <?php if ($success): ?>
             <div class="form-success">
                 <span class="form-success-icon">✓</span>
-                <h3>Message sent!</h3>
+                <h3>Message successfully sent!</h3>
                 <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
             </div>
             <?php else: ?>
@@ -64,7 +64,7 @@ require 'includes/header.php';
                 </div>
                 <div class="form-field">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Project inquiry / Job opportunity / Just saying hi">
+                    <input type="text" id="subject" name="subject" placeholder="Project inquiry / Job opportunity / Just saying hi" required>
                 </div>
                 <div class="form-field">
                     <label for="message">Message</label>

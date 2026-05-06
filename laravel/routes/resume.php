@@ -21,17 +21,17 @@ require 'includes/header.php';
 
         <div class="resume-section">
             <h2 class="resume-section-title">Experience</h2>
-            <?php foreach ($experience as $job): ?>
+            <?php foreach ($experience as $student): ?>
             <div class="resume-job">
                 <div class="resume-job-header">
                     <div>
-                        <strong class="resume-role"><?= htmlspecialchars($job['role']) ?></strong>
-                        <span class="resume-company"><?= htmlspecialchars($job['company']) ?></span>
+                        <strong class="resume-role"><?= htmlspecialchars($student['role']) ?></strong>
+                        <span class="resume-company"><?= htmlspecialchars($student['university']) ?></span>
                     </div>
-                    <span class="timeline-period"><?= htmlspecialchars($job['period']) ?></span>
+                    <span class="timeline-period"><?= htmlspecialchars($student['period']) ?></span>
                 </div>
                 <ul class="resume-points">
-                    <?php foreach ($job['points'] as $point): ?>
+                    <?php foreach ($student['points'] as $point): ?>
                     <li><?= htmlspecialchars($point) ?></li>
                     <?php endforeach; ?>
                 </ul>

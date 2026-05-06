@@ -1,6 +1,6 @@
 /* ==========================================================================
    Portfolio — Dark Editorial Theme
-   Three typeface. Cormorant Garamond + DM Mono + Cabinet Grotesk
+   Three typeface. Libre Baskerville + Fira Code + IBM Plex Sans
    ========================================================================== */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,9 +24,9 @@
   --green:       #37a373;
   --red:         #e24b4b;
 
-  --ff-display:  'Cormorant Garamond', Georgia, serif;
-  --ff-body:     'Cabinet Grotesk', Arial, sans-serif;
-  --ff-mono:     'DM Mono', 'Courier New' monospace;
+  --ff-display:  'Libre Baskerville', Georgia, Times New Roman, serif;
+  --ff-body:     'IBM Plex Sans', Segoe UI, Arial, sans-serif;
+  --ff-mono:     'Fira Code', 'Roboto Mono', 'Courier New', monospace;
 
   --radius:      6px;
   --radius-lg:   12px;

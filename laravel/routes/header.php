@@ -11,7 +11,7 @@ $current_path = rtrim($current_path, '/') ?: '/';
     <meta name="description" content="<?= htmlspecialchars($page_desc ?? SITE_TAGLINE) ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Cabinet+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>

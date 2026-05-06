@@ -29,45 +29,45 @@ $projects = [
 ];
 
 $blog_posts = [
-    'the-art-of-api-design' => [
+    'filipino-apis' => [
         'title'    => 'Filipino APIs: A Road for National Identity in IT',
         'date'     => 'May 5, 2026',
-        'category' => 'Engineering',
+        'category' => 'Backend',
         'read'     => '8 min read',
         'excerpt'  => 'Good APIs are invisible, and great APIs are a joy to use. Here\'s what I\'ve learned designing interfaces that developers actually love.',
         'body'     => [
-            'API design is one of those disciplines that looks easy until you\'ve maintained a bad one for two years.',
-            'The best APIs I\'ve encountered share a common trait: they feel inevitable. Every endpoint name, every response shape, every error code feels like the only right choice. That feeling doesn\'t happen by accident.',
-            'Start with your consumers. Before writing a single line of code, write the client code you wish existed. This "outside-in" approach forces you to prioritize developer experience over implementation convenience.',
-            'Name things consistently and precisely. Use nouns for resources, verbs only for actions that don\'t map cleanly to CRUD. /users/123/activate is fine. /doUserActivation is not.',
-            'Be boring with your response shapes. Consistent envelope structures ({data, meta, errors}) reduce cognitive load dramatically. Your consumers will thank you at 2am when something breaks.',
+            'API design is a craft, not a checklist. It requires empathy, foresight, and a deep understanding of your consumers\' needs and workflows.',
+            'The best APIs treat their endpoints as a public contract. Changes should be additive and non-breaking. Versioning is a last resort, not a default.',
+            'Start with the data model, but don\'t be married to it. The API should reflect the user\'s mental model, not the database schema.',
+            'Name things intentionally. A well-named endpoint or parameter can save hours of confusion and support tickets.',
+            'Be consistent in your design patterns. If you use pagination on one list endpoint, use it on all list endpoints. If you return errors in a certain format, stick to it everywhere.',
         ],
     ],
-    'css-architecture-at-scale' => [
-        'title'    => 'CSS Architecture at Scale: Beyond BEM',
-        'date'     => 'January 28, 2025',
+    'filipino-css-architecture' => [
+        'title'    => 'Filipino-named CSS Architecture: Managing Styles at Scale',
+        'date'     => 'May 6, 2026',
         'category' => 'Frontend',
-        'read'     => '6 min read',
-        'excerpt'  => 'BEM got us far, but modern CSS offers primitives that make large-scale styling genuinely manageable. Here\'s my current approach.',
+        'read'     => '7 min read',
+        'excerpt'  => 'CSS can be a nightmare at scale. Here\'s how I structure my stylesheets to keep them maintainable and performant, even as projects grow to thousands of lines of CSS.',
         'body'     => [
-            'I\'ve written CSS in nearly every methodology: BEM, OOCSS, SMACSS, utility-first, CSS-in-JS, and everything in between.',
-            'The honest truth is that methodology matters less than consistency. The worst CSS I\'ve ever inherited wasn\'t written without a methodology — it was written with three of them simultaneously.',
-            'Today, I lean on a layered approach: design tokens at the foundation, a utility layer for spacing and typography, component-scoped styles for complex patterns, and a thin global layer for resets and layout primitives.',
-            'CSS custom properties changed everything. They\'re not just variables — they\'re a communication channel between your design system and your components. Embrace them fully.',
+            'I\'ve written CSS in every way imaginable: global stylesheets, CSS Modules, BEM, utility-first, you name it. Each has its merits and trade-offs.',
+            'The key is to choose a structure that fits your team\'s size, project complexity, and workflow. There\'s no one-size-fits-all solution.',
+            'Today, I prefer a hybrid approach: component-scoped styles for isolated UI elements, and a well-organized global stylesheet for shared utilities and base styles.',
+            'CSS custom properties are a game-changer for theming and dynamic styling. I use them extensively for colors, spacing, and typography tokens.',
         ],
     ],
-    'postgres-performance-deep-dive' => [
-        'title'    => 'PostgreSQL Performance: A Deep Dive Into Query Planning',
-        'date'     => 'December 5, 2024',
+    'mysql-integration' => [
+        'title'    => 'MySQL Query Optimization: Reading the Query Planner\'s Mind',
+        'date'     => 'April 30, 2026',
         'category' => 'Database',
-        'read'     => '11 min read',
-        'excerpt'  => 'EXPLAIN ANALYZE is your best friend. Here\'s how to actually read what it\'s telling you and stop writing slow queries.',
+        'read'     => '9 min read',
+        'excerpt'  => 'This isn\'t your average "add an index" article. I\'ll show you how to interpret the query planner\'s output, identify its misconceptions, and write queries that play to MySQL\'s strengths instead of working against them.',
         'body'     => [
-            'Most slow queries aren\'t slow because the database is bad at its job. They\'re slow because we\'re asking the database to do the wrong job.',
-            'The query planner is a sophisticated cost-based optimizer. Understanding its assumptions — and how to correct them — is the single highest-leverage skill for backend performance.',
-            'Seq scans aren\'t always bad. For small tables or queries returning >20% of rows, a sequential scan will outperform an index scan. Stop blindly adding indexes.',
-            'The most common mistake I see: filtering on non-indexed columns in joins, then being surprised when a 10-row table join takes 3 seconds against a 10M-row table.',
-            'Run EXPLAIN (ANALYZE, BUFFERS) in a transaction you roll back. Look at the row count estimates vs actuals. A large discrepancy tells you the planner has bad statistics — run ANALYZE on the table.',
+            'In the world of databases, the query planner is your best friend and worst enemy. It makes decisions based on statistics and heuristics, which can lead to suboptimal plans if it\'s misinformed.',
+            'However, understanding how to work with it can significantly improve your database performance.',
+            'Sequences of joins, filters, and aggregations can have drastically different performance characteristics based on how the planner decides to execute them.',
+            'The most common mistake is to assume that the planner always makes the right choice. In reality, it can be misled by outdated statistics, complex queries, or edge cases in its algorithms.',
+            'Run EXPLAIN on your queries, analyze the output, and experiment with query rewrites to find the most efficient execution path.',
         ],
     ],
 ];
@@ -98,73 +98,37 @@ $skills = [
 
 $experience = [
     [
-        'role'    => 'Senior Full-Stack Engineer',
-        'company' => 'Orbital Systems',
-        'period'  => '2022 — Present',
-        'type'    => 'Full-time',
+        'role'    => 'Computer Programming Student',
+        'school' => 'Technological University of the Philippines',
+        'period'  => '2024 — Present',
+        'type'    => 'Education',
         'points'  => [
-            'Led architecture of a microservices platform serving 2M+ daily active users.',
-            'Built and maintained a React design system adopted across 6 product teams.',
-            'Mentored 4 junior engineers; introduced bi-weekly technical review sessions.',
-            'Reduced infrastructure costs by 34% through query optimization and caching strategy.',
-        ],
-    ],
-    [
-        'role'    => 'Full-Stack Developer',
-        'company' => 'Nimbus Labs',
-        'period'  => '2020 — 2022',
-        'type'    => 'Full-time',
-        'points'  => [
-            'Built core product features for a B2B SaaS platform from 0 to 1,500 customers.',
-            'Designed and shipped a real-time collaborative editing feature using WebSockets.',
-            'Owned the entire mobile experience (React Native) — 4.7★ App Store rating.',
-            'Integrated Stripe billing, handling $400k+ MRR in subscription revenue.',
-        ],
-    ],
-    [
-        'role'    => 'Frontend Developer',
-        'company' => 'Helix Studio',
-        'period'  => '2018 — 2020',
-        'type'    => 'Full-time',
-        'points'  => [
-            'Delivered 20+ client projects ranging from landing pages to full web applications.',
-            'Established the studio\'s component library, cutting project setup time by 60%.',
-            'Introduced automated accessibility auditing into the CI pipeline.',
-        ],
-    ],
-    [
-        'role'    => 'Freelance Developer',
-        'company' => 'Self-employed',
-        'period'  => '2016 — 2018',
-        'type'    => 'Freelance',
-        'points'  => [
-            'Built e-commerce stores, marketing sites, and custom WordPress themes for 30+ clients.',
-            'Developed a custom PHP booking system for a regional hospitality chain.',
+            'Progressed the curriculum with a focus on modern web development practices, including JavaScript frameworks, RESTful API design, and cloud deployment.',
+            'While me and my classmates are still studying, I\'ve taken the initiative to build several personal projects to apply what I\'ve learned and explore areas not covered in class, such as React Native and GraphQL.',
+            'Collaborated with peers on group projects, honing my teamwork and communication skills in a remote learning environment.',
         ],
     ],
 ];
 
 $uses_list = [
     'Hardware' => [
-        ['item' => 'MacBook Pro 16" M3 Max', 'note' => 'Primary machine. Ridiculously fast.'],
+        ['item' => 'Asus ZenBook', 'note' => 'Reliable workhorse with a comfortable keyboard.'],
         ['item' => 'LG UltraFine 27" 4K', 'note' => 'Easy on the eyes for long sessions.'],
-        ['item' => 'Keychron Q2 Pro', 'note' => 'Gateron Brown switches. Satisfying without being obnoxious.'],
-        ['item' => 'Sony WH-1000XM5', 'note' => 'Deep work demands silence.'],
+        ['item' => 'Keychron K8 Pro', 'note' => 'Mechanical keyboard that keeps me typing all day.'],
+        ['item' => 'Logitech MX Master 3', 'note' => 'Ergonomic mouse with customizable buttons.'],
     ],
     'Development' => [
         ['item' => 'VS Code', 'note' => 'Neovim is cool, productivity is cooler.'],
-        ['item' => 'Warp Terminal', 'note' => 'Finally, a terminal that doesn\'t feel like 1995.'],
-        ['item' => 'TablePlus', 'note' => 'Best database GUI, no contest.'],
-        ['item' => 'Insomnia', 'note' => 'For REST and GraphQL testing.'],
-        ['item' => 'Docker Desktop', 'note' => 'Consistent environments, zero excuses.'],
+        ['item' => 'Codespaces', 'note' => 'Instant dev environments in the cloud, no setup required.'],
+        ['item' => 'GitHub Copilot', 'note' => 'My AI pair programmer that helps me write code faster.'],
     ],
     'Design' => [
-        ['item' => 'Figma', 'note' => 'Where all interfaces begin.'],
-        ['item' => 'Pixelmator Pro', 'note' => 'Lighter than Photoshop for quick edits.'],
+        ['item' => 'Figma', 'note' => 'This is where I do all my design work, from wireframes to high-fidelity mockups.'],
+        ['item' => 'Miro', 'note' => 'For brainstorming sessions and collaborative whiteboarding.'],
     ],
     'Productivity' => [
         ['item' => 'Notion', 'note' => 'Project notes, architecture decisions, everything.'],
-        ['item' => 'Raycast', 'note' => 'Spotlight replacement that actually works for developers.'],
-        ['item' => 'Arc Browser', 'note' => 'Spaces changed how I context-switch.'],
+        ['item' => 'Trello', 'note' => 'Simple kanban boards to keep track of tasks and deadlines.'],
+        ['item' => 'Google Calendar', 'note' => 'Scheduling meetings and blocking out focused work time.'],
     ],
 ];

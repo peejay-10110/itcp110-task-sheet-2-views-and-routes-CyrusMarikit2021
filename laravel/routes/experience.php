@@ -1,7 +1,7 @@
 <?php
 require_once 'includes/data.php';
 $page_title = 'Experience';
-$page_desc  = 'My experience and career history of ' . SITE_NAME;
+$page_desc  = 'My experience as a student and aspiring developer.';
 require 'includes/header.php';
 ?>
 
@@ -15,22 +15,22 @@ require 'includes/header.php';
 <section class="section">
     <div class="container container--narrow">
         <div class="timeline">
-            <?php foreach ($experience as $idx => $job): ?>
+            <?php foreach ($experience as $idx => $student): ?>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-body">
                     <div class="timeline-header">
                         <div>
-                            <h2 class="timeline-role"><?= htmlspecialchars($job['role']) ?></h2>
+                            <h2 class="timeline-role"><?= htmlspecialchars($student['role']) ?></h2>
                             <div class="timeline-company">
-                                <span><?= htmlspecialchars($job['company']) ?></span>
-                                <span class="timeline-type"><?= htmlspecialchars($job['type']) ?></span>
+                                <span><?= htmlspecialchars($student['university']) ?></span>
+                                <span class="timeline-type"><?= htmlspecialchars($student['type']) ?></span>
                             </div>
                         </div>
-                        <span class="timeline-period"><?= htmlspecialchars($job['period']) ?></span>
+                        <span class="timeline-period"><?= htmlspecialchars($student['period']) ?></span>
                     </div>
                     <ul class="timeline-points">
-                        <?php foreach ($job['points'] as $point): ?>
+                        <?php foreach ($student['points'] as $point): ?>
                         <li><?= htmlspecialchars($point) ?></li>
                         <?php endforeach; ?>
                     </ul>
