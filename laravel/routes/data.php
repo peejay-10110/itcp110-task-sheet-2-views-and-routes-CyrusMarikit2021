@@ -7,10 +7,10 @@ define('SITE_GITHUB', 'https://github.com/CyrusMarikit2021');
 
 $projects = [
     'sungka-UI' => [
-        'title'       => 'Sungka AI',
+        'title'       => 'Sungka UI',
         'category'    => 'Design System',
         'year'        => '2026',
-        'tech'        => ['TypeScript', 'React', 'Storybook', 'Figma'],
+        'tech'        => ['MySQL', 'JavaScript', 'Dart', 'Figma', 'PHP'],
         'description' => 'A comprehensive design system built for multiple-scale applications. Features 70+ components, dark/light theming, and a compliance for full accessibility.',
         'long'        => 'Sungka UI was born out of a need for consistency across a suite of 12 internal tools. I architected the token system, built the component library from scratch, and wrote the documentation site. The result reduced cross-team UI inconsistency by over 90% and cut new feature development time in half.',
         'image'       => 'sungka',
@@ -20,7 +20,7 @@ $projects = [
         'title'       => 'Paniqui API',
         'category'    => 'Backend / DevOps',
         'year'        => '2026',
-        'tech'        => ['Go', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes'],
+        'tech'        => ['Java', 'MySQL', 'Dart', 'PHP'],
         'description' => 'High-throughput REST & GraphQL API gateway that handles 1.5M+ requests/day with sub-25ms p99 latency.',
         'long'        => 'Designed and deployed an API gateway with zero-downtime for a fintech startup. Implemented circuit breakers, rate limiting, and distributed tracing. Migrated the monolith to microservices with blue-green deployments.',
         'image'       => 'paniqui',

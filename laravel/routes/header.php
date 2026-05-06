@@ -21,7 +21,7 @@ $current_path = rtrim($current_path, '/') ?: '/';
 <header class="site-header" id="site-header">
     <div class="header-inner">
         <a href="/" class="logo" aria-label="Home">
-            <span class="logo-mark">AM</span>
+            <span class="logo-mark">CC</span>
             <span class="logo-name"><?= SITE_NAME ?></span>
         </a>
 

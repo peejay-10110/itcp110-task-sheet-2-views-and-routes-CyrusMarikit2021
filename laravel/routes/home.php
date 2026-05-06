@@ -30,9 +30,9 @@ require 'includes/header.php';
         <div class="hero-ring hero-ring--2"></div>
         <div class="hero-ring hero-ring--3"></div>
         <div class="hero-counter">
-            <div class="counter-item"><span class="counter-num">8+</span><span class="counter-lbl">Years of experience</span></div>
-            <div class="counter-item"><span class="counter-num">60+</span><span class="counter-lbl">Projects</span></div>
-            <div class="counter-item"><span class="counter-num">3</span><span class="counter-lbl">Continents</span></div>
+            <div class="counter-item"><span class="counter-num">2</span><span class="counter-lbl">Years of experience</span></div>
+            <div class="counter-item"><span class="counter-num">4</span><span class="counter-lbl">Projects</span></div>
+            <div class="counter-item"><span class="counter-num">1</span><span class="counter-lbl">Continent</span></div>
         </div>
     </div>
 </section>
@@ -71,7 +71,7 @@ require 'includes/header.php';
     <div class="marquee-track">
         <div class="marquee-content">
             <?php
-            $items = ['React', 'PHP', 'TypeScript', 'Go', 'PostgreSQL', 'Vue', 'Kubernetes', 'Redis', 'Laravel', 'GraphQL', 'AWS', 'Python'];
+            $items = ['Java', 'PHP', 'Python', 'Dart', 'MySQL', 'Laravel', 'Python'];
             foreach (array_merge($items, $items) as $i): ?>
                 <span class="marquee-item"><?= $i ?></span><span class="marquee-sep">✦</span>
             <?php endforeach; ?>
